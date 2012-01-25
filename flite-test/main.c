@@ -322,7 +322,7 @@ int32 test_wave(void *systemData, void *userData) {
 }
 
 int main() {
-	/*
+
 	int i, k;
 	int pitch;
 	int diff;
@@ -333,12 +333,12 @@ int main() {
 	voice = REGISTER_VOX(NULL);
 	
 	//s3eSoundChannelRegister(g_channel, S3E_CHANNEL_GEN_AUDIO, test_wave, voice);
-	//s3eSoundChannelRegister(g_channel, S3E_CHANNEL_STOP_AUDIO, test_close, NULL);
+	s3eSoundChannelRegister(g_channel, S3E_CHANNEL_STOP_AUDIO, test_close, NULL);
 	//s3eSoundChannelPlay(channel, (int16*)wave->samples, wave->num_samples, 2, 0);
 	test_wave(NULL, (void*)voice);
 	while( !g_closed );
 	UNREGISTER_VOX(voice);
-	*/
+
 	//flite_text_to_speech("hello world", voice, "play");
 	/*
 	FILE* file;
@@ -370,6 +370,7 @@ int main() {
 		fclose(file);
 	}
 	*/
+	/*
 	char* argv[3];
 	argv[0] = "flite";
 	argv[1] = "-t";
@@ -380,6 +381,6 @@ int main() {
 		s3eDeviceYield(100);
 	}
 //	free(buffer);
-	
+	*/
 }
 
