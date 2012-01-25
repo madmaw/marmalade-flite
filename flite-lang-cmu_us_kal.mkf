@@ -1,0 +1,29 @@
+includepath header
+
+library 
+{
+	".,flite-lang-cmu_us_kal"
+}
+
+includepaths
+{
+	flite-1.4-release/lang/cmulex
+	flite-1.4-release/lang/usenglish
+
+	flite-1.4-release/lang/cmu_us_kal
+}
+
+defines
+{
+}
+
+undefines
+{
+}
+
+files
+{
+	(flite-1.4-release/lang/cmu_us_kal)
+	["include"]
+	"*.h"
+}

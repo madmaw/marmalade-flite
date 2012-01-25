@@ -1,0 +1,88 @@
+#!/usr/bin/env mkb
+options
+{
+	lib
+}
+
+packages
+{
+	
+}
+
+subprojects
+{
+	iwutil
+	iwgx
+	# include as a subproject to get the header files
+	flite-1.4-release
+} 
+
+files
+{
+	(flite-1.4-release/src/audio)
+	["src/audio"]
+	audio.c
+	au_none.c
+	au_s3e.c
+	au_streaming.c
+	native_audio.h
+	(flite-1.4-release/src/cg)
+	["src/cg"]
+	"*.c"
+	(flite-1.4-release/src/hrg)
+	["src/hrg"]
+	"*.c"
+	(flite-1.4-release/src/lexicon)
+	["src/lexicon"]
+	"*.c"
+	(flite-1.4-release/src/regex)
+	["src/regex"]
+	"*.c"
+	(flite-1.4-release/src/speech)
+	["src/speech"]
+	"*.c"
+	(flite-1.4-release/src/stats)
+	["src/stats"]
+	"*.c"
+	(flite-1.4-release/src/synth)
+	["src/synth"]
+	"*.c"
+	(flite-1.4-release/src/utils)
+	["src/utils"]
+	cst_alloc.c
+	cst_args.c
+	cst_endian.c
+	cst_error.c
+	cst_features.c
+	cst_file_stdio.c
+	cst_mmap_posix.c
+	cst_socket.c
+	cst_string.c
+	cst_tokenstream.c
+	cst_val.c
+	cst_val_const.c
+	cst_val_user.c
+	cst_wchar.c
+	(flite-1.4-release/src/wavesynth)
+	["src/wavesynth"]
+	"*.c"
+
+#	(flite-1.4-release/lang/usenglish)
+#	["lang/usenglish"]
+#	"*.c"
+#	(flite-1.4-release/lang/cmulex)
+#	["lang/cmulex"]
+#	cmu_lex.c
+#	cmu_lex_entries.c
+#	cmu_lex_data.c
+#	cmu_lts_model.c
+#	cmu_lts_rules.c
+#	cmu_postlex.c
+#	(flite-1.4-release/lang/cmu_us_kal)
+#	["lang/cmu_us_kal"]
+#	"*.c"
+#	(flite-1.4-release/lang/cmu_us_awb)
+#	["lang/cmu_us_awb"]
+#	"*.c"
+
+}

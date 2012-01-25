@@ -1,0 +1,38 @@
+#!/usr/bin/env mkb
+options
+{
+	lib
+}
+
+packages
+{
+	
+}
+
+subprojects
+{
+	iwutil
+	iwgx
+	# include as a subproject to get the header files
+	flite-1.4-release
+	flite-lang-cmu_us_awb
+} 
+
+files
+{
+	(flite-1.4-release/lang/usenglish)
+	["src/lang/usenglish"]
+	"*.c"
+	(flite-1.4-release/lang/cmulex)
+	["src/lang/cmulex"]
+	cmu_lex.c
+	cmu_lex_entries.c
+	cmu_lex_data.c
+	cmu_lts_model.c
+	cmu_lts_rules.c
+	cmu_postlex.c
+
+	(flite-1.4-release/lang/cmu_us_awb)
+	["src/lang/cmu_us_awb"]
+	"*.c"
+}

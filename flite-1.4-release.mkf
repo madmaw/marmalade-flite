@@ -1,0 +1,36 @@
+includepath header
+
+library 
+{
+	".,flite-1.4-release"
+}
+
+includepaths
+{
+	flite-1.4-release/include
+
+#	flite-1.4-release/lang/cmu_us_kal
+#	flite-1.4-release/lang/cmu_us_awb
+#	flite-1.4-release/lang/cmulex
+#	flite-1.4-release/lang/usenglish
+}
+
+defines
+{
+	NO_UNION_INITIALIZATION
+	CST_AUDIO_S3E 
+}
+
+undefines
+{
+}
+
+files
+{
+	(flite-1.4-release/include)
+	["include"]
+	"*.h"
+#	(flite-1.4-release/lang/cmu_us_awb)
+#	["lang/cmu_us_awb"]
+#	"*.h"
+}

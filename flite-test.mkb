@@ -1,0 +1,27 @@
+#!/usr/bin/env mkb
+options
+{
+}
+
+packages
+{
+}
+includepaths
+{
+}
+defines
+{
+}
+
+subprojects
+{
+	# include as a subproject to get the header files
+	flite-1.4-release
+	flite-lang-cmu_us_slt
+} 
+
+files
+{
+	(flite-test)
+	main.c
+}
