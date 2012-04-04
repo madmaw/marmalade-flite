@@ -13,8 +13,8 @@ subprojects
 {
 	iwutil
 	iwgx
-	# include as a subproject to get the header files
 	flite-1.4-release
+	# include as a subproject to get the header files
 	flite-lang-cmu_us_kal
 } 
 

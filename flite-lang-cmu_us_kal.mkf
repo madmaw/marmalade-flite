@@ -25,5 +25,6 @@ files
 {
 	(flite-1.4-release/lang/cmu_us_kal)
 	["include"]
-	"*.h"
+	voxdefs.h
+	cmu_us_kal.h
 }

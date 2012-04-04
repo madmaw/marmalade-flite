@@ -42,6 +42,7 @@
 #include "cst_diphone.h"
 #include "usenglish.h"
 #include "cmu_lex.h"
+#include "cmu_us_kal.h"
 
 static cst_utterance *cmu_us_kal_postlex(cst_utterance *u);
 extern cst_diphone_db cmu_us_kal_db;
